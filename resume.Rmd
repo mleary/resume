@@ -1,0 +1,176 @@
+---
+title: mleary_resume
+author: Matt Leary
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles_html.css', 'resume']
+    # css: ['css/custom_resume.css', 'css/styles_pdf.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+params:
+  doctype: "HTML" # "PDF" or "HTML"
+
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+#load packages
+library(tidyverse)
+library(readxl)
+library(glue)
+
+#source helper functions
+source('helper_functions.R')
+
+# turn on/off PDF versioning (will delete download link) 
+# PDF <- FALSE
+
+# get data
+position_data <- readxl::read_excel('resume_data.xlsx', 
+                                    sheet = "positions", 
+                                    na = c("", "NA", "na")) 
+
+skill_data <- readxl::read_excel('resume_data.xlsx', 
+                                 sheet = "skills",
+                                 na = c("", "NA", "na"))                                 
+```
+
+
+Aside
+================================================================================
+
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r contactinfo}
+
+if(params$doctype == "HTML") {
+  glue::glue('
+    - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
+    - <i class="fa fa-phone"></i> <a href="tel:+19109886368">(910) 988-6368</a>
+    - <i class="fa fa-envelope"></i> mattleary311@gmail.com
+    - <i class="fa fa-github"></i> [github.com/mleary](https://github.com/mleary)
+    - <i class="fab fa-linkedin-in"></i> [linkedin.com/mbleary](https://www.linkedin.com/in/mbleary/)
+  ')
+} 
+
+if(params$doctype == "PDF") {
+  glue::glue('
+    - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
+    - <i class="fa fa-envelope"></i> mattleary311<!-- breaking hyplerlink -->@gmail.com
+    - <i class="fa fa-github"></i> github.com/mleary
+    - <i class="fab fa-linkedin-in"></i> linkedin.com/mbleary
+    - <i class="fa fa-phone"></i> 910.988.6368
+  ')
+}
+
+```
+
+
+
+```{r download}
+
+if(params$doctype == "HTML"){
+  cat("[<i class='fas fa-download'></i> Download as a PDF](https://github.com/mleary/resume/raw/master/mleary_resume.pdf)")
+}
+
+```
+
+<br>
+
+
+Coding skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r codingskills, dev.args = list(bg = 'transparent')}
+
+build_skill_bars(skill_data, "Coding")
+
+```
+
+R skills {#rpackages}
+--------------------------------------------------------------------------------
+
+```{r rskills, dev.args = list(bg = 'transparent')}
+
+build_skill_bars(skill_data, "R Packages")
+
+```
+
+Learning Focus {#interests}
+--------------------------------------------------------------------------------
+
+```{r learningfocus, dev.args = list(bg = 'transparent')}
+
+build_skill_bars(skill_data, "Interest")
+
+```
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+
+
+```{r}
+if(params$doctype == "HTML") {
+  glue::glue("
+    Made w/ [**pagedown**](https://github.com/rstudio/pagedown).   
+    Source code: [**Github repo**](https://github.com/mleary/resume).
+  ")
+} 
+if(params$doctype == "PDF") {
+  glue::glue("
+    Made w/ **pagedown::html_resume**
+    Code: **github.com/mleary/resume** 
+  ")
+}
+```
+
+
+Last updated on `r Sys.Date()`.
+<br>
+<br>
+
+
+Main
+================================================================================
+
+
+Matthew Leary {#title}
+--------------------------------------------------------------------------------
+
+### Data Scientist  |  Veteran  |  Tottenham Hotspur supporter
+
+I enjoy working with data to solve business problems and build tools that help
+people work more efficiently. What I appreciate most about my job is the opportunity 
+to learn new methods and techniques with each new project. Data science requires 
+constant learning of technical methods, communication and presentation skills, 
+and business requirements, and I find that exciting.
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r education}
+print_section(position_data, 'education')
+```
+
+
+
+Professional Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r jobs}
+print_section(position_data, 'work')
+```
+
