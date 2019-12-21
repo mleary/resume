@@ -9,11 +9,9 @@ output:
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
 params:
-  doctype: "HTML" # "PDF" or "HTML"
-
+  doctype: "HTML" # "PDF" or "HTML" is automatically updated in update_resume.R 
 
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -29,10 +27,8 @@ library(glue)
 #source helper functions
 source('helper_functions.R')
 
-# turn on/off PDF versioning (will delete download link) 
-# PDF <- FALSE
 
-# get data
+# get data from xlsx file
 position_data <- readxl::read_excel('resume_data.xlsx', 
                                     sheet = "positions", 
                                     na = c("", "NA", "na")) 
@@ -52,6 +48,7 @@ Contact {#contact}
 
 ```{r contactinfo}
 
+# Adjust contact info based on document type - html has link while pdf does not
 if(params$doctype == "HTML") {
   glue::glue('
     - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
@@ -77,7 +74,7 @@ if(params$doctype == "PDF") {
 
 
 ```{r download}
-
+# if doctype is html add link to download a pdf version
 if(params$doctype == "HTML"){
   cat("[<i class='fas fa-download'></i> Download as a PDF](https://github.com/mleary/resume/raw/master/mleary_resume.pdf)")
 }
@@ -92,6 +89,7 @@ Coding skills {#skills}
 
 ```{r codingskills, dev.args = list(bg = 'transparent')}
 
+# function from helper_functions.R
 build_skill_bars(skill_data, "Coding")
 
 ```
@@ -101,6 +99,7 @@ R skills {#rpackages}
 
 ```{r rskills, dev.args = list(bg = 'transparent')}
 
+# function from helper_functions.R
 build_skill_bars(skill_data, "R Packages")
 
 ```
@@ -110,6 +109,7 @@ Learning Focus {#interests}
 
 ```{r learningfocus, dev.args = list(bg = 'transparent')}
 
+# function from helper_functions.R
 build_skill_bars(skill_data, "Interest")
 
 ```
@@ -119,8 +119,9 @@ Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
 
-
 ```{r}
+
+# set disclaimer in bottom right corner based on doctype
 if(params$doctype == "HTML") {
   glue::glue("
     Made w/ [**pagedown**](https://github.com/rstudio/pagedown).   
@@ -151,10 +152,9 @@ Matthew Leary {#title}
 ### Data Scientist  |  Veteran  |  Tottenham Hotspur supporter
 
 I enjoy working with data to solve business problems and build tools that help
-people work more efficiently. What I appreciate most about my job is the opportunity 
-to learn new methods and techniques with each new project. Data science requires 
-constant learning of technical methods, communication and presentation skills, 
-and business requirements, and I find that exciting.
+people.  My favorite part of working in data science is the constant oppurtunity 
+to learn, from statistics to software development. Previously, I worked in public
+policy and public relations.
 
 
 
