@@ -39,7 +39,7 @@ sup {
   --sidebar-background-color: #edeffc; /* Make sidebar #edeffc */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
-  --decorator-border: 2px solid #edeffc; /* Make timeline a blue as well*/
+ /* --decorator-border: 2px solid #edeffc; /* Make timeline a blue as well*/
 }
 
 .details .place {
@@ -76,11 +76,6 @@ sup {
   width: calc(var(--sidebar-width) + 9px);
   line-height: 1.2;
   font-size: 0.75rem;
-}
-
-/* Make little circle outline be a light blue */
-.decorator::after {
-  background-color: #9eabff;
 }
 
 /* Remove the fake bullets from lists */
