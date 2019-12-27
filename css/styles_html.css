@@ -80,7 +80,7 @@ sup {
 
 /* Make little circle outline be a light blue */
 .decorator::after {
-  background-color: #08306b;
+  background-color: #9eabff;
 }
 
 /* Remove the fake bullets from lists */
