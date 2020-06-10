@@ -2,6 +2,11 @@
 #date:11/10/2019
 #intent: helper functions for resume built with R pagedown
 
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(purrr)
+
 # Construct a bar chart of skills
 build_skill_bars <- function(skill_data, section_title) {
   skill_data %>%  
@@ -15,7 +20,7 @@ build_skill_bars <- function(skill_data, section_title) {
     labs(x = NULL,
          y = NULL) + 
     theme_void() +
-    theme(panel.background = element_rect(fill = "transparent"),
+    theme(panel.background = element_rect(fill = "transparent", colour = NA),
           plot.background  = element_rect(fill = "transparent", colour = NA)) 
 }
 
