@@ -1,16 +1,16 @@
-"section","skill","level"
-"Coding","R",4.25
-"Coding","SQL",3
-"Coding","Python",2.5
-"Coding","Git",3.5
-"Coding","CSS/HTML",2.5
-"Interest","Applied Statistics",4
-"Interest","SQL",3.5
-"Interest","Software Engineering",5
-"Interest","Deep Learning",3
-"Interest","Python",5
-"R Packages","tidyverse",4.25
-"R Packages","rmarkdown",4
-"R Packages","tidymodels",3.5
-"R Packages","shiny",3
-"R Packages","RODBC | RSQLite",3.5
+section,skill,level
+Coding,R,4.25
+Coding,SQL,3
+Coding,Python,2.5
+Coding,Git,3.5
+Coding,CSS/HTML,2.5
+Interest,Applied Statistics,4
+Interest,SQL,3.5
+Interest,Software Engineering,5
+Interest,Deep Learning,3
+Interest,Python,5
+R Packages,tidyverse,4.25
+R Packages,rmarkdown,4.25
+R Packages,tidymodels,3.75
+R Packages,shiny,2.5
+R Packages,usethis | devtools,3.25

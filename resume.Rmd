@@ -152,7 +152,10 @@ Matthew Leary {#title}
 
 ### Data Scientist  |  Veteran  |  Tottenham Hotspur supporter
 
-I enjoy working with data to solve business problems and build tools that help people work more efficiently.  I do this by (trying to) understand the business workflow and then applying machine learning, predicitive modeling and {insert ML buzz word here}. Previously, I worked in public policy and public relations. 
+I enjoy working with data to solve business problems and build tools that help people work more efficiently. I found my way into data science and will stay for the business research & understanding, continual learning of new techniques & skills, and the dash of detective work that keeps it interesting. 
+
+Previously, I worked in public policy and public relations.  Less exciting, although it taught me the importance of clear and direct communication.
+
 
 
 Education {data-icon=graduation-cap data-concise=true}
