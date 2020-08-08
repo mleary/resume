@@ -20,8 +20,6 @@ knitr::opts_chunk$set(
 )
 
 #load packages
-library(tidyverse)
-library(readxl)
 library(glue)
 
 #source helper functions
@@ -29,13 +27,16 @@ source('helper_functions.R')
 
 
 # get data from xlsx file
-position_data <- readxl::read_excel('resume_data.xlsx', 
-                                    sheet = "positions", 
-                                    na = c("", "NA", "na")) 
+# position_data <- readxl::read_excel('resume_data.xlsx',
+#                                     sheet = "positions",
+#                                     na = c("", "NA", "na"))
+# 
+# skill_data <- readxl::read_excel('resume_data.xlsx',
+#                                  sheet = "skills",
+#                                  na = c("", "NA", "na"))
 
-skill_data <- readxl::read_excel('resume_data.xlsx', 
-                                 sheet = "skills",
-                                 na = c("", "NA", "na"))                                 
+position_data <- read.csv('./data/position_data.csv', stringsAsFactors = F)
+skill_data <- read.csv('./data/skill_data.csv', stringsAsFactors = F)
 ```
 
 
@@ -151,10 +152,9 @@ Matthew Leary {#title}
 
 ### Data Scientist  |  Veteran  |  Tottenham Hotspur supporter
 
-I enjoy working with data to solve business problems and build tools that help
-people.  My favorite part of working in data science is the constant oppurtunity 
-to learn, from statistics to software development. Previously, I worked in public
-policy and public relations.
+I enjoy working with data to solve business problems and build tools that help people work more efficiently. I found my way into data science and will stay for the business research & understanding, continual learning of new techniques & skills, and the dash of detective work that keeps it interesting. 
+
+Previously, I worked in public policy and public relations.  Less exciting, although it taught me the importance of clear and direct communication.
 
 
 
