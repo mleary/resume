@@ -154,7 +154,7 @@ Matthew Leary {#title}
 
 I enjoy working with data to solve business problems and build tools that help people work more efficiently. I found my way into data science and will stay for the continuous learning and the dash of detective work baked into each project. 
 
-Previously, I worked in public policy and public relations.  I found it less exciting, although it taught me the importance of communicating complex issues clearly to a wider audience.
+Previously, I worked in public policy and public relations.  I found it less exciting, although it taught me the importance and challenge of clearly communicating technical issues to a wider audience.
 
 
 
