@@ -77,7 +77,7 @@ if(params$doctype == "PDF") {
 ```{r download}
 # if doctype is html add link to download a pdf version
 if(params$doctype == "HTML"){
-  cat("[<i class='fas fa-download'></i> Download as a PDF](https://github.com/mleary/resume/raw/master/mleary_resume.pdf)")
+  cat("[<i class='fas fa-download'></i> Download as a PDF](https://github.com/mleary/resume/raw/main/mleary_resume.pdf)")
 }
 
 ```
@@ -85,13 +85,13 @@ if(params$doctype == "HTML"){
 <br>
 
 
-Coding skills {#skills}
+Tech skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r codingskills, dev.args = list(bg = 'transparent')}
 
 # function from helper_functions.R
-build_skill_bars(skill_data, "Coding")
+build_skill_bars(skill_data, "Tech")
 
 ```
 
@@ -111,7 +111,7 @@ Learning Focus {#interests}
 ```{r learningfocus, dev.args = list(bg = 'transparent')}
 
 # function from helper_functions.R
-build_skill_bars(skill_data, "Interest")
+build_skill_bars(skill_data, "Interests")
 
 ```
 
@@ -152,9 +152,7 @@ Matthew Leary {#title}
 
 ### Data Scientist  |  Veteran  |  Tottenham Hotspur supporter
 
-I enjoy working with data to solve business problems and build tools that help people work more efficiently. I found my way into data science and will stay for the continuous learning and the dash of detective work baked into each project. 
-
-Previously, I worked in public policy and public relations.  I found it less exciting, although it taught me the importance and challenge of clearly communicating technical issues to a wider audience.
+I enjoy working with data to find and deliver insights, solve business problems, and build tools that help people work more efficiently. I found my way into data science after 10+ years working in public policy and public relations.
 
 
 

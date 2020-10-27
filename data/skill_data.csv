@@ -1,14 +1,14 @@
 section,skill,level
-Coding,R,4.25
-Coding,SQL,3
-Coding,Python,2.5
-Coding,Git,3.5
-Coding,CSS/HTML,2.5
-Interest,Applied Statistics,4
-Interest,Software Engineering,4.25
-Interest,ML Ops,4.5
-Interest,Deep Learning,3
-Interest,Python,5
+Tech,R,4.25
+Tech,SQL,3.25
+Tech,Python,3.25
+Tech,Git,3.5
+Tech,Azure ,3
+Interests,Advanced Statistics,4.25
+Interests,Software Engineering,4
+Interests,Behavioral Economics,4
+Interests,Reproducible research,4.25
+Interests,Python,4.5
 R Packages,tidyverse,4.25
 R Packages,rmarkdown,4.25
 R Packages,tidymodels,3.75

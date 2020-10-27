@@ -15,3 +15,8 @@ The main files are:
 - 'css/': Directory containing the custom CSS files used to tweak the default 'resume' format from pagedown.
 
 Shout out to Nick Strayer, whose code was the basis for my format. I heavily borrowed from his code and approach. See the original here http://nickstrayer.me/cv/
+
+
+# To Do List
+
+I want to adjust how I store my career info.  More to follow, but is works for now.
