@@ -54,7 +54,8 @@ if(params$doctype == "HTML") {
   glue::glue('
     - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
     - <i class="fa fa-phone"></i> <a href="tel:+19109886368">(910) 988-6368</a>
-    - <i class="fa fa-envelope"></i> mattleary311@gmail.com
+    - <i class="fa fa-envelope"></i> matt.leary@protonmail.com
+    - <i class="fa fa-globe"></i> [mattleary.com](https://www.mattleary.com/blog/)
     - <i class="fa fa-github"></i> [github.com/mleary](https://github.com/mleary)
     - <i class="fab fa-linkedin-in"></i> [linkedin.com/mbleary](https://www.linkedin.com/in/mbleary/)
   ')
@@ -63,10 +64,11 @@ if(params$doctype == "HTML") {
 if(params$doctype == "PDF") {
   glue::glue('
     - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
+    - <i class="fa fa-phone"></i> 910.988.6368
     - <i class="fa fa-envelope"></i> matt.leary<!-- breaking hyplerlink -->@protonmail.com
+    - <i class="fab fa-globe"></i> mattleary.com
     - <i class="fa fa-github"></i> github.com/mleary
     - <i class="fab fa-linkedin-in"></i> linkedin.com/mbleary
-    - <i class="fa fa-phone"></i> 910.988.6368
   ')
 }
 
@@ -152,7 +154,7 @@ Matthew Leary {#title}
 
 ### Data Scientist  |  Veteran  |  Tottenham Hotspur supporter
 
-I enjoy working with data to find and deliver insights, solve business problems, and build tools that help people work more efficiently. I found my way into data science after 10+ years working in public policy and public relations.
+I enjoy working with data to find and deliver insights, solve business problems, and build tools that help people work more efficiently. I transitioned into a data science career in after 10+ years working in public policy and public relations.
 
 
 
