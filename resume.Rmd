@@ -152,7 +152,7 @@ Main
 Matthew Leary {#title}
 --------------------------------------------------------------------------------
 
-### Data Scientist  |  Veteran  |  Tottenham Hotspur supporter
+### Data Scientist  |  Puzzle Enthusiast  |  Tottenham Hotspur supporter
 
 I enjoy working with data to find and deliver insights, solve business problems, and build tools that help people work more efficiently. I moved into data science after 10+ years working in public policy and public relations.
 
