@@ -6,7 +6,7 @@ rmarkdown::render(input = "resume.Rmd",
                   output_file = "index.html",
                   output_options = list(
                     css = c('css/custom_resume.css', 'css/styles_html.css', 'resume'),
-                    self_contained = FALSE
+                    self_contained = TRUE
                   ),
                   params = list(
                     doctype = "HTML"
