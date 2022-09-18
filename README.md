@@ -19,4 +19,6 @@ Shout out to Nick Strayer, whose code was the basis for my format. I heavily bor
 
 # To Do List
 
-I want to adjust how I store my career info.  More to follow, but is works for now.
+* Consider multipag resume? Probably not.
+* Improve work bullets
+* Move all use of resume to github pages instead of netlify (simplifying my processes and moving to github pages mostly)
