@@ -22,3 +22,4 @@ Shout out to Nick Strayer, whose code was the basis for my format. I heavily bor
 * Consider multipag resume? Probably not.
 * Improve work bullets
 * Move all use of resume to github pages instead of netlify (simplifying my processes and moving to github pages mostly)
+  * https://mleary.github.io/resume/
