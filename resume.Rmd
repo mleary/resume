@@ -55,7 +55,6 @@ if(params$doctype == "HTML") {
     - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
     - <i class="fa fa-phone"></i> <a href="tel:+19109886368">(910) 988-6368</a>
     - <i class="fa fa-envelope"></i> matt.leary@protonmail.com
-    - <i class="fa fa-globe"></i> [mattleary.com](https://www.mattleary.com/blog/)
     - <i class="fa fa-github"></i> [github.com/mleary](https://github.com/mleary)
     - <i class="fab fa-linkedin-in"></i> [linkedin.com/mbleary](https://www.linkedin.com/in/mbleary/)
   ')
@@ -66,7 +65,6 @@ if(params$doctype == "PDF") {
     - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
     - <i class="fa fa-phone"></i> 910.988.6368
     - <i class="fa fa-envelope"></i> matt.leary<!-- breaking hyplerlink -->@protonmail.com
-    - <i class="fa fa-globe"></i> mattleary.com
     - <i class="fa fa-github"></i> github.com/mleary
     - <i class="fab fa-linkedin-in"></i> linkedin.com/mbleary
   ')
@@ -156,14 +154,6 @@ I enjoy working with data to find and deliver insights, solve business problems,
 
 
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r education}
-print_section(position_data, 'education')
-```
-
-
 
 Professional Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -172,3 +162,10 @@ Professional Experience {data-icon=suitcase}
 print_section(position_data, 'work')
 ```
 
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r education}
+print_section(position_data, 'education')
+```
