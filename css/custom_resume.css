@@ -13,6 +13,8 @@
 
 [data-id="title"] {
   margin: 0.25 0.5in 0.8in -0.5in;
+  text-transform: none;
+
 }
 
 .main-block {
