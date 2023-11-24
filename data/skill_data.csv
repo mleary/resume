@@ -1,16 +1,15 @@
 section,skill,level
-Tech,R,4.25
-Tech,SQL,3
-Tech,Python,3.75
+Languages,R,4.25
+Languages,SQL,3
+Languages,Python,4
+Languages, HTML/CSS, 2.5
 Tech,Git,3
-Tech,Azure / AWS,3.5
-Interests,Advanced Statistics,4.25
-Interests,Software Engineering,4
+Tech,Azure,4
+Tech,AWS,2
+Tech,Databricks,3
+Tech,Github/DevOps,3.5
 Interests,Databricks,4
 Interests,ML Ops,5
 Interests,Cloud infrastructure,4.75
-R Packages,tidyverse,4.25
-R Packages,rmarkdown,4.25
-R Packages,tidymodels,3.5
-R Packages,purrr,2.5
-R Packages,usethis | devtools,3.5
+Interests,LLMs,4
+Interests,Woodworking,3
