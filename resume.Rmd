@@ -85,7 +85,17 @@ if(params$doctype == "HTML"){
 <br>
 
 
-Tech skills {#skills}
+Languages {#languages}
+--------------------------------------------------------------------------------
+
+```{r languages, dev.args = list(bg = 'transparent')}
+
+# function from helper_functions.R
+build_skill_bars(skill_data, "Languages")
+
+```
+
+Tech competency {#tech}
 --------------------------------------------------------------------------------
 
 ```{r codingskills, dev.args = list(bg = 'transparent')}
@@ -95,17 +105,7 @@ build_skill_bars(skill_data, "Tech")
 
 ```
 
-R skills {#rpackages}
---------------------------------------------------------------------------------
-
-```{r rskills, dev.args = list(bg = 'transparent')}
-
-# function from helper_functions.R
-build_skill_bars(skill_data, "R Packages")
-
-```
-
-Learning Focus {#interests}
+Learning focus {#interests}
 --------------------------------------------------------------------------------
 
 ```{r learningfocus, dev.args = list(bg = 'transparent')}
