@@ -54,7 +54,7 @@ if(params$doctype == "HTML") {
   glue::glue('
     - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
     - <i class="fa fa-phone"></i> <a href="tel:+19109886368">(910) 988-6368</a>
-    - <i class="fa fa-envelope"></i> matt.leary@protonmail.com
+    - <i class="fa fa-envelope"></i> matt.leary@proton.me
     - <i class="fa fa-github"></i> [github.com/mleary](https://github.com/mleary)
     - <i class="fab fa-linkedin-in"></i> [linkedin.com/mbleary](https://www.linkedin.com/in/mbleary/)
   ')
@@ -64,7 +64,7 @@ if(params$doctype == "PDF") {
   glue::glue('
     - <i class="fa fa-map-marked-alt"></i> Richmond, Virginia
     - <i class="fa fa-phone"></i> 910.988.6368
-    - <i class="fa fa-envelope"></i> matt.leary<!-- breaking hyplerlink -->@protonmail.com
+    - <i class="fa fa-envelope"></i> matt.leary<!-- breaking hyplerlink -->@proton.me
     - <i class="fa fa-github"></i> github.com/mleary
     - <i class="fab fa-linkedin-in"></i> linkedin.com/mbleary
   ')
