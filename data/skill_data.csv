@@ -1,15 +1,16 @@
 section,skill,level
-Languages,R,4.25
-Languages,SQL,3
-Languages,Python,4
-Languages, HTML/CSS, 2.5
+Tech,R,4.25
+Tech,SQL,3.5
+Tech,Python,4
+Tech, Azure / AWS, 3.5
 Tech,Git,3
-Tech,Azure,4
-Tech,AWS,2
-Tech,Databricks,3
-Tech,Github/DevOps,3.5
-Interests,Databricks,4
-Interests,ML Ops,5
-Interests,Cloud infrastructure,4.75
-Interests,LLMs,4
-Interests,Woodworking,3
+Learning,Woodworking,3.5
+Learning,LLMs,4.25
+Learning,Databricks,4
+Learning,ML Ops,5
+Learning,Cloud infrastructure,4
+Current,Azure,4.5
+Current,Python,4
+Current,Databricks,4.5
+Current,Azure OpenAI,3
+Current,DevOps,5
